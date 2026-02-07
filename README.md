@@ -1,7 +1,5 @@
 # Certbot Docker + OVH
-
 Ce projet permet de générer et renouveler des certificats Let's Encrypt via Docker et le plugin DNS OVH.
-
 
 ## Paramétrage
 dans `.ovhsecrets/ovh.ini`
@@ -29,12 +27,11 @@ MODE="staging"
 ## Générer un certificat 
 `./initial.sh` 
 
-
 ## Renouvellement 
 `./renew.sh`
 
 ## Vérification 
-Apres redemarrage apache 
+Apres redémarrage apache (ou autre)
  
 `sudo openssl s_client -connect local.marmits.com:443 -servername local.marmits.com`  
 - Si le certificat est en production, aucun STAGING dans la réponse
