@@ -51,7 +51,7 @@ voir: [WIKI OVH](https://marmits.com/wiki/Ovh_letsencrypt)
 Exemple de cron quotidien :
 
 ```cron
-0 3 * * * /home/docker/cerbot-docker/renew.sh >> /home/docker/cerbot-docker/renew.log 2>&1
+0 3 * * * /home/johnny/docker/cerbot-docker/renew.sh >> /home/johnny/docker/cerbot-docker/renew.log 2>&1
 ```
 
 ---
