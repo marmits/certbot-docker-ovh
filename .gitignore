@@ -1,0 +1,4 @@
+letsencrypt/
+lib/
+.ovhsecrets/ovh.ini
+*.log
