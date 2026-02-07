@@ -33,3 +33,8 @@ MODE="staging"
 ## Renouvellement 
 `./renew.sh`
 
+## Vérification 
+Apres redemarrage apache 
+ 
+`sudo openssl s_client -connect local.marmits.com:443 -servername local.marmits.com`  
+- Si le certificat est en production, aucun STAGING dans la réponse

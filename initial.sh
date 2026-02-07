@@ -34,3 +34,6 @@ docker compose run --rm certbot \
   --email "$EMAIL" \
   $SERVER_ARG \
   $DOMAINS
+
+
+  $WEB_RELOAD_CMD || true

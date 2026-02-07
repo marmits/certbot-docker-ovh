@@ -1,8 +1,9 @@
 services:
   certbot:
-    build: .
+    image: certbot/dns-ovh
     container_name: certbot-ovh
     volumes:
       - "./letsencrypt:/etc/letsencrypt"
       - "./lib:/var/lib/letsencrypt"
       - "./.ovhsecrets:/secrets"
+    restart: "no"
