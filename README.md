@@ -66,3 +66,16 @@ Apres redémarrage apache (ou autre)
  
 `sudo openssl s_client -connect local.exemple.com:443 -servername local.exemple.com`  
 - Si le certificat est en production, aucun STAGING dans la réponse
+
+## Exemple APACHE Vhost
+```
+<VirtualHost *:443>
+DocumentRoot /home/john/web/
+ServerAlias john.exemple.com
+
+		SSLEngine on
+        SSLCertificateFile /home/john/docker/cerbot-docker/letsencrypt/live/exemple.com/fullchain.pem
+        SSLCertificateKeyFile /home/john/docker/cerbot-docker/letsencrypt/live/exemple.com/privkey.pem	
+
+</VirtualHost>
+```
